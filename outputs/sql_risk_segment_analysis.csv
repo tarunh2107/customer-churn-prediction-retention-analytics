@@ -1,0 +1,4 @@
+risk_level,customer_count,actual_churned_count,actual_churn_rate_pct,avg_churn_probability_pct,avg_monthly_charges,avg_tenure_months
+High Risk,2358,1370,58.1,78.56,77.19,15.27
+Medium Risk,1507,343,22.76,45.19,63.41,27.71
+Low Risk,3178,156,4.91,10.46,56.18,47.27

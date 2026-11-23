@@ -1,0 +1,74 @@
+# ==============================================================================
+# Git Ignore Configuration: Customer Churn Prediction & Retention Analytics
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints & runtime cache
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Local Databases (Can be recreated via src/create_sql_database.py)
+*.db
+*.sqlite
+*.sqlite3
+
+# Large Benchmark Model Artifacts (Can be regenerated via src/train_random_forest.py)
+models/random_forest_pipeline.joblib
+
+# Environment variables, credentials, and secrets
+.env
+.env.*
+*.key
+*.pem
+*.cert
+*.pfx
+secrets.json
+credentials.json
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating System Files & Logs
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

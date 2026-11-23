@@ -1,0 +1,47 @@
+Transformed_Feature,Clean_Feature_Name,Importance
+num__Total Charges,Total Charges,0.13322243078029758
+num__Tenure Months,Tenure Months,0.12617626185546682
+num__Monthly Charges,Monthly Charges,0.11917229301771685
+cat__Contract_Month-to-month,Contract_Month-to-month,0.06909928860115971
+cat__Contract_Two year,Contract_Two year,0.036847143701354924
+cat__Online Security_No,Online Security_No,0.03354764951093463
+cat__Tech Support_No,Tech Support_No,0.029883457902230893
+cat__Dependents_Yes,Dependents_Yes,0.028651546782171636
+cat__Payment Method_Electronic check,Payment Method_Electronic check,0.02830593927765582
+cat__Internet Service_Fiber optic,Internet Service_Fiber optic,0.025134672735643786
+cat__Dependents_No,Dependents_No,0.024620334667727346
+cat__Online Backup_No,Online Backup_No,0.016340767935054398
+cat__Gender_Female,Gender_Female,0.01560345253753803
+cat__Gender_Male,Gender_Male,0.015225331365685973
+cat__Partner_No,Partner_No,0.014777948302418166
+cat__Paperless Billing_Yes,Paperless Billing_Yes,0.014460307347883497
+cat__Partner_Yes,Partner_Yes,0.014347215523517831
+cat__Device Protection_No,Device Protection_No,0.014175137035232384
+cat__Paperless Billing_No,Paperless Billing_No,0.01370742212183574
+cat__Contract_One year,Contract_One year,0.013540578907507967
+cat__Payment Method_Bank transfer (automatic),Payment Method_Bank transfer (automatic),0.012242724267342962
+cat__Payment Method_Credit card (automatic),Payment Method_Credit card (automatic),0.01220849020463607
+cat__Online Security_Yes,Online Security_Yes,0.01197633407522598
+cat__Multiple Lines_No,Multiple Lines_No,0.011810100238575953
+cat__Online Backup_Yes,Online Backup_Yes,0.01140754777797
+cat__Multiple Lines_Yes,Multiple Lines_Yes,0.011283199786153952
+cat__Senior Citizen_Yes,Senior Citizen_Yes,0.01106237897976955
+cat__Senior Citizen_No,Senior Citizen_No,0.010732464353307793
+cat__Payment Method_Mailed check,Payment Method_Mailed check,0.010605192728323736
+cat__Internet Service_DSL,Internet Service_DSL,0.01054655541406285
+cat__Streaming Movies_Yes,Streaming Movies_Yes,0.010412103847005985
+cat__Tech Support_Yes,Tech Support_Yes,0.010311455970201213
+cat__Streaming Movies_No,Streaming Movies_No,0.010216426404151081
+cat__Streaming TV_Yes,Streaming TV_Yes,0.010176510582357969
+cat__Device Protection_Yes,Device Protection_Yes,0.01007012078045639
+cat__Streaming TV_No,Streaming TV_No,0.009566732944914051
+cat__Device Protection_No internet service,Device Protection_No internet service,0.005681313051102174
+cat__Tech Support_No internet service,Tech Support_No internet service,0.004954500817515589
+cat__Streaming TV_No internet service,Streaming TV_No internet service,0.00465208974276726
+cat__Streaming Movies_No internet service,Streaming Movies_No internet service,0.0041842424882066655
+cat__Internet Service_No,Internet Service_No,0.003729331455575941
+cat__Phone Service_Yes,Phone Service_Yes,0.0031544551752383377
+cat__Multiple Lines_No phone service,Multiple Lines_No phone service,0.0031114780909649704
+cat__Online Backup_No internet service,Online Backup_No internet service,0.0030878655078916944
+cat__Phone Service_No,Phone Service_No,0.0030168607845822227
+cat__Online Security_No internet service,Online Security_No internet service,0.002960344622665623

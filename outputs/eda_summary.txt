@@ -1,0 +1,91 @@
+CUSTOMER CHURN EXPLORATORY DATA ANALYSIS (EDA) - NUMERICAL SUMMARY
+Dataset: data/processed/telco_churn_clean.csv
+Total Observations: 7,043
+
+================================================================================
+1. OVERALL CHURN DISTRIBUTION
+================================================================================
+- Total Customers: 7,043
+- Retained Customers (0): 5,174 (73.46%)
+- Churned Customers (1): 1,869 (26.54%)
+- Baseline Churn Rate: 26.54%
+
+================================================================================
+2. CHURN BY CONTRACT TYPE
+================================================================================
+- Month-to-month: 3,875 total | 1,655 churned | 2,220 retained | Churn Rate: 42.71%
+- One year:       1,473 total |   166 churned | 1,307 retained | Churn Rate: 11.27%
+- Two year:       1,695 total |    48 churned | 1,647 retained | Churn Rate:  2.83%
+Key Observation: Month-to-month contracts have a churn rate approximately 3.8x higher than one-year contracts and 15.1x higher than two-year contracts.
+
+================================================================================
+3. CHURN BY TENURE COHORTS
+================================================================================
+- 0-12 months:   2,186 total | 1,037 churned | 1,149 retained | Churn Rate: 47.44%
+- 13-24 months:  1,024 total |   294 churned |   730 retained | Churn Rate: 28.71%
+- 25-36 months:    832 total |   180 churned |   652 retained | Churn Rate: 21.63%
+- 37-48 months:    762 total |   145 churned |   617 retained | Churn Rate: 19.03%
+- 49-60 months:    832 total |   120 churned |   712 retained | Churn Rate: 14.42%
+- 61-72 months:  1,407 total |    93 churned | 1,314 retained | Churn Rate:  6.61%
+Key Observation: Churn rate decreases monotonically as tenure increases, dropping from 47.44% in the first year to 6.61% for customers with over 5 years of tenure.
+
+================================================================================
+4. CHURN BY INTERNET SERVICE TIER
+================================================================================
+- Fiber optic:         3,096 total | 1,297 churned | 1,799 retained | Churn Rate: 41.89%
+- DSL:                 2,421 total |   459 churned | 1,962 retained | Churn Rate: 18.96%
+- No Internet Service: 1,526 total |   113 churned | 1,413 retained | Churn Rate:  7.40%
+Key Observation: Fiber optic internet subscribers exhibit a churn rate of 41.89%, compared to 18.96% for DSL and 7.40% for non-internet subscribers.
+
+================================================================================
+5. CHURN BY MONTHLY CHARGES ($)
+================================================================================
+- Retained Customers (0): Mean = $61.27 | Median = $64.43 | Std = $31.09 | IQR = [$25.10, $88.40]
+- Churned Customers (1):  Mean = $74.44 | Median = $79.65 | Std = $24.67 | IQR = [$56.15, $94.20]
+Key Observation: Churned customers show higher central tendency in monthly billing, with a median monthly charge $15.22 higher ($79.65 vs. $64.43) and mean $13.17 higher ($74.44 vs. $61.27) than retained customers.
+
+================================================================================
+6. CHURN BY PAYMENT METHOD
+================================================================================
+- Electronic check:          2,365 total | 1,071 churned | 1,294 retained | Churn Rate: 45.29%
+- Mailed check:              1,612 total |   308 churned | 1,304 retained | Churn Rate: 19.11%
+- Bank transfer (automatic): 1,544 total |   258 churned | 1,286 retained | Churn Rate: 16.71%
+- Credit card (automatic):   1,522 total |   232 churned | 1,290 retained | Churn Rate: 15.24%
+Key Observation: Customers using electronic checks have a churn rate of 45.29%, whereas automatic payment methods (bank transfer and credit card) have churn rates below 17%.
+
+================================================================================
+7. CHURN BY TECH SUPPORT STATUS
+================================================================================
+- No:                  3,473 total | 1,446 churned | 2,027 retained | Churn Rate: 41.64%
+- Yes:                 2,044 total |   310 churned | 1,734 retained | Churn Rate: 15.17%
+- No internet service: 1,526 total |   113 churned | 1,413 retained | Churn Rate:  7.40%
+Key Observation: Customers without Tech Support add-on have a churn rate of 41.64%, compared to 15.17% for those with Tech Support.
+
+================================================================================
+8. CHURN BY ONLINE SECURITY STATUS
+================================================================================
+- No:                  3,498 total | 1,461 churned | 2,037 retained | Churn Rate: 41.77%
+- Yes:                 2,019 total |   295 churned | 1,724 retained | Churn Rate: 14.61%
+- No internet service: 1,526 total |   113 churned | 1,413 retained | Churn Rate:  7.40%
+Key Observation: Customers without Online Security have a churn rate of 41.77%, compared to 14.61% for those with the add-on enabled.
+
+================================================================================
+9. CHURN BY SENIOR CITIZEN STATUS
+================================================================================
+- Non-Seniors (No):  5,901 total | 1,393 churned | 4,508 retained | Churn Rate: 23.61%
+- Seniors (Yes):     1,142 total |   476 churned |   666 retained | Churn Rate: 41.68%
+Key Observation: Senior citizens have a churn rate of 41.68%, compared to 23.61% among non-senior customers.
+
+================================================================================
+10. CHURN BY PAPERLESS BILLING
+================================================================================
+- Paper Billing (No):     2,872 total |   469 churned | 2,403 retained | Churn Rate: 16.33%
+- Paperless Billing (Yes): 4,171 total | 1,400 churned | 2,771 retained | Churn Rate: 33.57%
+Key Observation: Customers enrolled in paperless billing exhibit a churn rate of 33.57%, compared to 16.33% for those receiving paper invoices.
+
+================================================================================
+11. CORRELATIONS WITH CHURN VALUE
+================================================================================
+- Tenure Months:   r = -0.352 (Negative correlation; higher tenure associated with lower churn probability)
+- Total Charges:   r = -0.198 (Negative correlation; driven by strong collinearity with tenure r = 0.826)
+- Monthly Charges: r = +0.193 (Positive correlation; higher monthly charges associated with higher churn probability)
